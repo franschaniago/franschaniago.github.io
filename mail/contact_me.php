@@ -5,17 +5,17 @@ require ("../vendor/phpmailer/phpmailer/PHPMailerAutoload.php");
 
 $mail = new PHPMailer;
 
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+//$mail->SMTPDebug = 2;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'franschaniago5@gmail.com';                 // SMTP username
 $mail->Password = 'frans110495';                           // SMTP password
-//$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 25;                                    // TCP port to connect to
+$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465;                                    // TCP port to connect to
 
-$mail->setFrom('from@example.com', 'Mailer');
+$mail->setFrom('franschaniago5@gmail.com', 'Mailer');
 $mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
