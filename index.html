@@ -1,250 +1,251 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Frans Chaniago – Software Developer</title>
+<meta name="description" content="Software Developer dengan pengalaman lebih dari 10 tahun di Proptech, SCM, dan bisnis enterprise.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f7fa;--surface:#fff;--ink:#101a2c;--muted:#53607a;--line:#dde3ec;
+  --accent:#2457e6;--accent-ink:#fff;--tint:#e8eefc;
+  --font:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0d1422;--surface:#141d30;--ink:#eaeff8;--muted:#9aa8c2;--line:#25324b;--accent:#7a9dff;--accent-ink:#0d1422;--tint:#1a2745;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0d1422;--surface:#141d30;--ink:#eaeff8;--muted:#9aa8c2;--line:#25324b;--accent:#7a9dff;--accent-ink:#0d1422;--tint:#1a2745;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{font-weight:800;text-decoration:none;letter-spacing:-.01em}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+.nav a.l{text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;white-space:nowrap}
+.nav a.l:hover{color:var(--ink)}
+section{padding:72px 0 0}
+h1{font-size:clamp(2.4rem,6.5vw,4.4rem);line-height:1.04;letter-spacing:-.035em;margin:0 0 20px;font-weight:800}
+h2{font-size:clamp(1.5rem,3.2vw,2rem);letter-spacing:-.02em;margin:0 0 28px;font-weight:700}
+h3{margin:0;font-size:1.05rem;font-weight:700}
+p{margin:0 0 14px}
+.hero{padding-top:64px}
+.hero-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:center}
+.role{color:var(--accent);font-weight:700;margin-bottom:14px}
+.lead{color:var(--muted);font-size:1.08rem;max-width:58ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;min-height:46px;padding:0 22px;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid var(--line);background:var(--surface);transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.p{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.facts{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:8px 24px}
+.fact{padding:18px 0;border-bottom:1px solid var(--line)}
+.fact:last-child{border:0}
+.fact b{display:block;font-size:1.7rem;letter-spacing:-.02em;line-height:1.2}
+.fact span{color:var(--muted);font-size:.92rem}
+.about{max-width:70ch;color:var(--muted);font-size:1.05rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card p{color:var(--muted);font-size:.95rem;margin:8px 0 0}
+.card .m{font-size:1.6rem;font-weight:800;color:var(--accent);letter-spacing:-.02em;line-height:1.2}
+.tl{position:relative;margin:0;padding:0 0 0 28px;list-style:none;border-left:2px solid var(--line)}
+.tl li{position:relative;padding-bottom:36px}
+.tl li:last-child{padding-bottom:0}
+.tl li::before{content:"";position:absolute;left:-36px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.tl .when{color:var(--muted);font-size:.88rem;font-weight:500;margin:2px 0 10px}
+.tl .org{color:var(--accent);font-weight:600}
+.tl ul{margin:0;padding-left:18px;color:var(--muted);font-size:.96rem;max-width:75ch}
+.tl ul li{padding:0 0 8px;position:static}
+.tl ul li::before{display:none}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chip{background:var(--tint);color:var(--ink);border-radius:999px;padding:5px 13px;font-size:.88rem;font-weight:500}
+.chip.o{background:transparent;border:1px solid var(--line);color:var(--muted)}
+.sub{font-weight:700;margin:26px 0 0;font-size:.98rem}
+.edu{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.contact{margin-top:72px;background:var(--ink);color:var(--bg);border-radius:20px;padding:44px 32px}
+.contact h2{margin-bottom:10px}
+.contact p{opacity:.8;max-width:50ch}
+.contact .btn{background:transparent;color:var(--bg);border-color:color-mix(in srgb,var(--bg) 35%,transparent)}
+.contact .btn.p{background:var(--bg);color:var(--ink);border-color:var(--bg)}
+footer{padding:36px 0 44px;color:var(--muted);font-size:.88rem;text-align:center}
+@media (max-width:820px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  section{padding-top:56px}
+  .nav ul{gap:16px}
+  .brand{display:none}
+  .contact{padding:32px 22px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Frans Chaniago</a>
+    <nav aria-label="Navigasi utama"><ul>
+      <li><a class="l" href="#tentang">Tentang</a></li>
+      <li><a class="l" href="#dampak">Dampak</a></li>
+      <li><a class="l" href="#pengalaman">Pengalaman</a></li>
+      <li><a class="l" href="#keahlian">Keahlian</a></li>
+      <li><a class="l" href="#portofolio">Portofolio</a></li>
+      <li><a class="l" href="#kontak">Kontak</a></li>
+    </ul></nav>
+  </div>
+</header>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-    <style>
-
-        @font-face {
-            font-family: 'myfont' ;
-            src: url('/assets/OpenSansCondensed-Light.ttf') format('truetype');
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body{
-            font-family: monospace;
-            font-size: x-large;
-        }
-    </style>
-    
-    <title>Frans Chaniago</title>
-  </head>
-  <body>
-    <div class="container fixed-top">
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand" href="#">Frans Chaniago</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aboutme">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <strong><a class="nav-link" href="https://www.linkedin.com/in/franschaniago/" target="_blank">Linkedin</a></strong>
-                    </li>
-
-                   <!--  <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Skill Set
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#skills">Skills</a>
-
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#mentionable">Mentionable</a>
-                          <a class="dropdown-item" href="#proficiency">Proficiency</a>
-                        </div>
-                      </li>
-                    <li class="nav-item">
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Projects
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#opensource">Project Contributions</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#researchproject">Research Projects</a>
-                        </div>
-                    </li> -->
-                   <!--  <li class="nav-item">
-                        <a class="nav-link" href="/assets/Resume_Shoaib_Mehedi.pdf">Resume</a>
-                    </li> -->
-                </ul>
-            </div>
-        </nav>
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="role">Software Developer · Full Stack &amp; Back-End</p>
+      <h1>Frans Chaniago</h1>
+      <p class="lead">Membangun sistem back-end yang scalable serta aplikasi web dan mobile untuk Proptech, Supply Chain Management, dan bisnis enterprise.</p>
+      <div class="cta">
+        <a class="btn p" href="mailto:franschaniago5@gmail.com">Kirim email</a>
+        <a class="btn" href="https://linkedin.com/in/franschaniago" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="#pengalaman">Lihat pengalaman</a>
+      </div>
     </div>
+    <aside class="facts" aria-label="Ringkasan">
+      <div class="fact"><b>10+ tahun</b><span>Pengalaman pengembangan software</span></div>
+      <div class="fact"><b>95.000+</b><span>Transaksi diproses fitur Lounge sejak 2024</span></div>
+      <div class="fact"><b>Puluhan ribu</b><span>Pengguna aktif harian di Summarecon Mall &amp; Home Apps</span></div>
+    </aside>
+  </div>
+</section>
 
-    <div class="container mt-5" id="aboutme">
-        <br><br>
-        <div class="row p-3">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="row justify-content-center">
-                    <img src="rsz_12132171bbbb.png" class="rounded-circle w-75 h-100" alt="100X100"> 
-                    <div>
-                        <h4 class="mt-3">Frans Chaniago</h4>
-                        <h6 class="mt-1 text-success">@Backend Developer</h6>
-                        <h6 class="mt-1">Tangerang, Banten</h6>
-                    </div>
-                </div>  
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12">
-                <p>Few words about me,<br>
-                    Full time <span class="text-success">Software Engineer</span>  (Back-End Developer). Always interested in learning new technologies. Loves to solve programming/algorithmic problems and write useful code. <br>
-                    <strong class="text-success">Amd.kom</strong> from <a href="https://bsi.ac.bd/"><span class="text-success">BSI University</span></a>. <br><br>   
-                    As a software engineer, though my primary focus is on <strong> Back-end development</strong>. I have professional expertise on <strong>PHP & Laravel Framework</strong> and <strong>Back-end Service</strong> development. <br>
-                    Writing code as a full time software engineer from <strong class="text-success">2016</strong>, I have completed several projects in Laravel Framework. <br><br><br>
-                  <!--   Though I use C/C++ for problem solving practice, Most of my professional work is in <strong class="text-success">JavaScript</strong> and <strong class="text-success">Node.js</strong>. I love the awesome Node.js platform. <br> -->
-            </div>
-        </div>
+<section id="tentang">
+  <div class="wrap">
+    <h2>Tentang saya</h2>
+    <p class="about">Software Developer dengan pengalaman lebih dari 10 tahun, khususnya di Proptech, Supply Chain Management (SCM), dan bisnis enterprise. Terbiasa memegang fitur dari awal hingga rilis produk, melakukan code review, memimpin rilis sebagai lead deployer, serta menjembatani klien, Project Manager, dan tim teknis.</p>
+  </div>
+</section>
+
+<section id="dampak">
+  <div class="wrap">
+    <h2>Dampak yang pernah saya hasilkan</h2>
+    <div class="grid">
+      <div class="card"><div class="m">60%</div><h3>Biaya perangkat QA turun</h3><p>Menginisiasi platform cloud multi-device testing (TestMu/LambdaTest); siklus pengujian juga 40% lebih cepat.</p></div>
+      <div class="card"><div class="m">50%</div><h3>Penggunaan RAM server turun</h3><p>Memberi arahan teknis migrasi web server dari Apache ke Nginx. Latensi turun 30% dan kapasitas concurrency meningkat.</p></div>
+      <div class="card"><div class="m">50%</div><h3>Onboarding developer lebih singkat</h3><p>Menyusun dokumentasi teknis dan arsitektur yang juga memperlancar serah terima fitur antar tim.</p></div>
+      <div class="card"><div class="m">95.000+</div><h3>Transaksi fitur Lounge</h3><p>Sebagai PIC, mengelola pengerjaan dari development hingga rilis produksi, lalu mengembangkannya seiring pertumbuhan transaksi.</p></div>
     </div>
+  </div>
+</section>
 
-    <div class="container mt-5" id="education">
-        <br><br>
-        <div class="row p-3">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="row justify-content-center">
-                    <div>
-                        <i class="fas fa-book-open"></i>
-                        <h4 class="mt-3 d-inline text-success">EDUCATION</h4>
-                    </div>
-                </div>  
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12">
-                <div>
-                    <h5 class="font-weight-bold">Information System</h5>
-                    <strong class="text-success">BSI University</strong><br>
-                    <strong class="text-success">3.50</strong>
-                    <div>
-                        <i class="fas fa-map-marker-alt d-inline"></i>
-                        <p class="d-inline">Tangerang, Banten</p>
-                        <a class="d-inline" href="https://bsi.ac.id/">https://www.bsi.ac.id/</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section id="pengalaman">
+  <div class="wrap">
+    <h2>Pengalaman kerja</h2>
+    <ol class="tl">
+      <li>
+        <h3>Full Stack Software Developer</h3>
+        <div class="org">PT. Summarecon Agung, Tbk · Tangerang</div>
+        <div class="when">Nov 2023 – Sekarang</div>
+        <ul>
+          <li>PIC fitur Lounge pada Summarecon Mall Apps, dikerjakan bersama 1 rekan tim dari development hingga rilis produksi.</li>
+          <li>Lead deployer untuk rilis produksi, integrasi kode, dan hotfix kritis (Gitflow), termasuk code review selama proses deployment.</li>
+          <li>Menginisiasi riset dan penerapan platform cloud multi-device testing untuk tim QA.</li>
+          <li>Memberi arahan teknis migrasi web server dari Apache ke Nginx berbekal pengalaman mengelola server Linux.</li>
+          <li>Menyusun dan memelihara dokumentasi teknis dan arsitektur.</li>
+          <li>Mengembangkan dan memelihara fitur pada ekosistem Summarecon Mall &amp; Home Apps.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Backend Developer</h3>
+        <div class="org">WEBARQ · Jakarta</div>
+        <div class="when">Nov 2018 – Nov 2023</div>
+        <ul>
+          <li>Membangun dan memelihara arsitektur server-side, skema database relasional, dan RESTful API untuk proyek klien enterprise.</li>
+          <li>Mengintegrasikan payment gateway Midtrans dan PayPal untuk transaksi multi-channel yang aman.</li>
+          <li>Mewakili sisi teknis dalam pertemuan klien bersama Project Manager, lalu menyusun spesifikasi kerja untuk tim Front-End.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Web Developer</h3>
+        <div class="org">PT. Victoria Care Indonesia, Tbk · Jakarta</div>
+        <div class="when">Apr 2017 – Okt 2018</div>
+        <ul>
+          <li>Membangun Inventory Management System internal (PHP, MySQL) yang mendigitalkan operasional gudang dan alur logistik.</li>
+          <li>Mengotomatisasi proses bisnis manual untuk menyederhanakan SCM, serta mengoptimalkan query SQL dan index untuk pelacakan stok real-time.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Full Stack Web Developer</h3>
+        <div class="org">ACTdisain · Jakarta</div>
+        <div class="when">Feb 2016 – Mar 2017</div>
+        <ul>
+          <li>Membangun aplikasi web responsif untuk klien agensi dengan tenggat ketat, menerjemahkan kebutuhan bisnis dan desain UI/UX menjadi fungsi back-end.</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="keahlian">
+  <div class="wrap">
+    <h2>Keahlian</h2>
+    <div class="skills">
+      <div class="card"><h3>Bahasa &amp; framework</h3><div class="chips">
+        <span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">CodeIgniter</span><span class="chip">JavaScript</span><span class="chip">React.js</span><span class="chip">React Native</span><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">Python</span><span class="chip">HTML</span><span class="chip">CSS</span></div></div>
+      <div class="card"><h3>Database &amp; infrastruktur</h3><div class="chips">
+        <span class="chip">MySQL</span><span class="chip">Docker</span><span class="chip">Nginx</span><span class="chip">AWS S3</span><span class="chip">AWS EC2</span><span class="chip">AWS RDS</span></div></div>
+      <div class="card"><h3>Spesialisasi teknis</h3><div class="chips">
+        <span class="chip">RESTful API</span><span class="chip">Payment gateway (Midtrans, PayPal)</span><span class="chip">Arsitektur sistem</span><span class="chip">Optimasi database</span><span class="chip">Cross-device testing (LambdaTest)</span><span class="chip">Pengembangan dengan AI (Copilot)</span></div></div>
+      <div class="card"><h3>Kepemimpinan &amp; kolaborasi</h3><div class="chips">
+        <span class="chip">Kepemilikan fitur (PIC)</span><span class="chip">Code review</span><span class="chip">Manajemen rilis (Gitflow)</span><span class="chip">Dokumentasi teknis</span><span class="chip">Berbagi pengetahuan</span><span class="chip">Koordinasi lintas tim</span></div></div>
     </div>
+  </div>
+</section>
 
-    <div class="container mt-5" id="experience">
-        <br><br>
-        <div class="row p-3">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="row justify-content-center"> 
-                    <div class="d-inline">
-                        <i class="fas fa-briefcase"></i>
-                        <h4 class="mt-3 d-inline text-success">EXPERIENCE</h4>
-                    </div>
-                </div>  
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12">
-                <div>
-                    <h4 class="font-weight-bold">Backend Programmer</h4>
-                    <strong class="lead text-success">PT Web Architect Indonesia</strong>
-                    <div>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p class="d-inline">Slipi, Jakarta Barat</p>
-                    </div>
-                    <strong>November 2018 - Ongoing</strong>
-                    <p>Uses: Laravel Framework</p>
-                    <p>A few words on what I am doing here</p>
-                    <ol>
-                        <li>I work as a Laravel backend engineer.</li>
-                        <li>I write RESTful API and solve hard problem solving tasks.</li>
-                        <li>Discuss requirements with other team and design system.</li>
-                    </ol>
-                </div>
-                <hr>
-                <div>
-                    <h4 class="font-weight-bold">Staff IT</h4>
-                    <strong class="lead text-success">PT Victoria Care Indonesia, Tbk.</strong>
-                    <div>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p class="d-inline">Kembangan, Jakarta Barat</p>
-                    </div>
-                    <strong>April 2017 - October 2018</strong>
-                    <p>Uses: Codeigniter Framework</p>
-                    <p>A few words on what I am doing here</p>
-                    <ol>
-                        <li>I work as a CI backend engineer.</li>
-                        <li>Discuss requirements with other team and design system.</li>
-                    </ol>
-                </div>
-                <hr>
-                <div>
-                    <h4 class="font-weight-bold">Fullstack Programmer</h4>
-                    <strong class="lead text-success">CV ACTdisain</strong>
-                    <div>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p class="d-inline">Kalideres, Jakarta Barat</p>
-                    </div>
-                    <strong>February 2016 - March 2017</strong>
-                    <p>Uses: Codeigniter Framework</p>
-                    <p>A few words on what I am doing here</p>
-                    <ol>
-                        <li>I work as a Fullstack programmer use PHP Native.</li>
-                        <li>Discuss requirements with other team and design system.</li>
-                    </ol>
-                </div>
-                
-            </div>
-        </div>
+<section id="portofolio">
+  <div class="wrap">
+    <h2>Portofolio</h2>
+    <p class="sub" style="margin-top:0">Mobile apps</p>
+    <div class="chips">
+      <span class="chip">Summarecon Mall Apps</span><span class="chip">Summarecon Home Apps</span><span class="chip">Wellground Apps</span>
     </div>
-
-    <div class="container mt-5" id="skills">
-        <br><br>
-        <div class="row p-3">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="row justify-content-center"> 
-                    <div class="d-inline">
-                        <i class="fas fa-briefcase"></i>
-                        <h4 class="mt-3 d-inline text-success">SKILLS</h4>
-                    </div>
-                </div>  
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12">
-                <div>
-                    <table class="table">
-                        <tbody>
-                            <tr>
-                                <th><span class="badge badge-primary">PHP</span></th>
-                                <th><span class="badge badge-primary">Javascript</span></th>
-                                <th><span class="badge badge-primary">Laravel</th>
-                                <th><span class="badge badge-primary">Codeiginiter</span></th>
-                            </tr>
-
-                            <tr>
-                                <th><span class="badge badge-primary">Mysql</span></th>
-                              <th><span class="badge badge-primary">Git</span></th>
-                                <th><span class="badge badge-primary">Mysql</span></th>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+    <p class="sub">Web apps</p>
+    <div class="chips">
+      <span class="chip">Summarecon Mall CMS</span><span class="chip">Summarecon Home CMS</span>
+      <span class="chip o">pethouse.co.id</span><span class="chip o">bayan.com.sg</span><span class="chip o">indonesiaport.co.id</span><span class="chip o">ppid.ap1.co.id</span><span class="chip o">diamondfoodindonesia.com</span><span class="chip o">ranchmarket.co.id</span><span class="chip o">jdih.maritim.go.id</span><span class="chip o">sintesagroup.com</span><span class="chip o">interport.co.id</span><span class="chip o">ftacenter.kemendag.go.id</span><span class="chip o">orangutan.or.id</span><span class="chip o">ramsaysimedarby.co.id</span><span class="chip o">edufarmers.org</span><span class="chip o">smf-indonesia.co.id</span><span class="chip o">jasaglobalbinakarya.com</span><span class="chip o">app.id</span><span class="chip o">indolysaght.com</span>
     </div>
+  </div>
+</section>
 
-    <script src="https://kit.fontawesome.com/26819962fd.js" crossorigin="anonymous"></script>
+<section id="pendidikan">
+  <div class="wrap">
+    <h2>Pendidikan</h2>
+    <div class="card edu">
+      <div><h3>Diploma 3 (D3) Manajemen Informatika</h3><p style="margin:4px 0 0">Universitas Bina Sarana Informatika (UBSI)</p></div>
+      <div style="color:var(--muted);font-size:.95rem">Lulus 2016 · IPK 3,50</div>
+    </div>
+  </div>
+</section>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+<section id="kontak" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact">
+      <h2>Mari berdiskusi</h2>
+      <p>Tertarik berkolaborasi atau punya proyek yang perlu back-end yang kokoh? Hubungi saya.</p>
+      <div class="cta">
+        <a class="btn p" href="mailto:franschaniago5@gmail.com">franschaniago5@gmail.com</a>
+        <a class="btn" href="tel:+6281519971689">+62 815-1997-1689</a>
+        <a class="btn" href="https://linkedin.com/in/franschaniago" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
-  </body>
+<footer><div class="wrap">© 2026 Frans Chaniago · Kab. Tangerang, Indonesia</div></footer>
+</body>
 </html>
